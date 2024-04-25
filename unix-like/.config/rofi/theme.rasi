@@ -1,0 +1,109 @@
+@import "fonts.rasi"
+@import "colors.rasi"
+
+window {
+    width: 65%;
+    height: 55%;
+    transparency: "real";
+    background-color: var(background);
+    text-color: var(foreground);
+    padding: 20px 25px 20px 25px;
+}
+
+inputbar {
+    background-color: var(background);
+    text-color: var(background);
+    padding: 10px;
+    children: [ "prompt","textbox-prompt-colon","entry"];
+}
+
+prompt {
+    background-color: var(background);
+    text-color: var(foreground-alt);
+}
+
+textbox-prompt-colon {
+    background-color: var(background);
+    margin:     0px 4px 0px 0px ;
+    expand:     false;
+    str:        ":";
+    text-color: var(foreground);
+}
+
+mainbox {
+    background-color: var(background);
+    children: ["inputbar", "listview", "mode-switcher"];
+}
+
+entry {
+    background-color: var(background);
+    text-color:        var(foreground);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: Gray;
+    placeholder:       "Type to filter";
+}
+
+listview {
+    background-color: var(background);
+    padding: 6px;
+    columns: 3;
+    spacing: 4px;
+    lines: 12;
+}
+
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+
+element normal.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element normal.active {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element alternate.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element alternate.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element selected.normal {
+    background-color: var(background);
+    text-color: var(foreground-alt);
+}
+
+mode-switcher{
+    enabled:                     true;
+    spacing:                     1px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            var(background);
+    text-color:                  var(foreground);
+}
+
+button {
+    padding:                     5px 10px;
+    border:                      0px solid;
+    background-color:            var(background);
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+
+button selected {
+    background-color:   var(background);
+    text-color:     var(foreground-alt);
+}

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+run() {
+	if ! pgrep -f "$1" ; then
+		"$@"&
+	fi
+}
+
+# autostart
+# usage: run [command]
+
+# polybar
+run "$HOME"/.config/polybar/launch
+
+# xresources
+run xrdb merge "$HOME"/.Xresources
+
+# wallpaper
+run "$HOME"/.fehbg
+
+# notification
+run dunst
+
+# compositor
+run picom
+
+# autolock
+run xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
+
+# mpd
+run mpd

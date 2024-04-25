@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+run() {
+	if ! pgrep -f "$1" ; then
+		"$@"&
+	fi
+}
+
+# user specific autostart
+# usage: run [command]
+
+# PipeWire
+# run pipewire
+
+# Network Manager Applet
+# run nm-applet
+
+# Polkit
+run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Ibus daemon
+# run ibus-daemon -drx
+
+# Fcitx5
+run fcitx5
+
+# Bluetooth
+# run blueberry-tray
+
+# Syncthing
+run syncthing --no-browser
