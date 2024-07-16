@@ -14,3 +14,4 @@
 - [Old Reddit Redirect](https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect/) - As its name
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
 - [Enhancer for YouTube](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/)
+- [Web Scrobbler](https://addons.mozilla.org/en-US/firefox/addon/web-scrobbler/)
