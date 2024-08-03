@@ -2,24 +2,14 @@
 
 # user specific options
 
-# weather location (space = "+")
-# example: "London", "Salt+Lake+City"
-weather_location=""
-
-# weather units (default = "?m")
-# ?u - USCS (farenheit, mph)
-# ?m - metric (celcius, km/h)
-# ?M - metric (celcius, m/s)
-weather_unit="?m"
-
 # current colorscheme
 bsp_color=macaroni
 
 # gaps (default: 5)
 bsp_gaps=5
 
-# window border (default: 4)
-bsp_border=4
+# window border (default: 3)
+bsp_border=3
 
 # split ratio (default: 0.5)
 bsp_split_ratio=0.5

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 run() {
-	if ! pgrep -f "$1" ; then
+	if ! pgrep -fx "$1" ; then
 		"$@"&
 	fi
 }
@@ -9,14 +9,14 @@ run() {
 # autostart
 # usage: run [command]
 
-# polybar
-run "$HOME"/.config/polybar/launch
-
-# xresources
-run xrdb merge "$HOME"/.Xresources
+# xsettingsd
+run xsettingsd
 
 # wallpaper
 run "$HOME"/.fehbg
+
+# polybar
+run "$HOME"/.config/polybar/launch
 
 # notification
 run dunst
@@ -29,3 +29,6 @@ run xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
 
 # mpd
 run mpd
+
+# polkit-gnome
+run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

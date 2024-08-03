@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 
+# settings
 mode="dark"
-bg="#021b21"
+wall="fill"
+
+# colors
+bg="#010101"
 fg="#f8f8f6"
-bl="#032b32"
+bl="#242424"
 wh="#fefefe"
 r="#ff8989"
-g="#37bf8d"
-y="#fefa67"
-b="#a978f6"
-m="#fd56f9"
-c="#8afeff"
-br="#032c32"
-br2="#37bf8d"
+g="#ffbf73"
+y="#fcff84"
+b="#81c8f4"
+m="#f463e8"
+c="#88d8f1"
+br="#242424"
+br2="#ff4343"

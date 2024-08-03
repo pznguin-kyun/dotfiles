@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
-# penguinRice: p3nguin-kun's auto rice script
+# pengurice: p3nguin-kun's auto rice script
+
+# audio
+# "$HOME"/.config/bspwm/bin/audio
 
 # terminate already running programs
 processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do
-    if pgrep -f "$process"; then
+    if pgrep -x "$process" > /dev/null; then
         killall -q "$process"
     fi
 done
@@ -14,7 +17,6 @@ done
 sxhkd -c "$HOME"/.config/bspwm/config/keys &
 
 # config files
-"$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/init &
 bspc config external_rules_command "$HOME"/.config/bspwm/config/external-rules &
 

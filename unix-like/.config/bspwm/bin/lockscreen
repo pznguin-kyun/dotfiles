@@ -1,21 +1,3 @@
 #!/usr/bin/env bash
 
-# consts
-PICTURE=/tmp/i3lock.png
-SCREENSHOT="maim -u $PICTURE"
-BLUR="5x4"
-
-# main
-main(){
-    sleep 0.1
-    $SCREENSHOT
-    convert $PICTURE -blur $BLUR \
-        -font "Roboto-Medium" \
-        -pointsize 26 -fill white -gravity center \
-        -annotate +0+160 "Type Password to Unlock" $PICTURE
-    i3lock -f -i $PICTURE
-    rm $PICTURE
-}
-
-main
-exit 0
+i3lock -c 000000 -f

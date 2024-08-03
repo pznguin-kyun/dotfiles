@@ -10,7 +10,7 @@
     progress_bar = true
     progress_bar_height = 2
     progress_bar_frame_width = 0
-    progress_bar20in_width = 150
+    progress_bar_min_width = 150
     progress_bar_max_width = 300
     indicate_hidden = yes
     transparency = 0
@@ -22,7 +22,7 @@
     separator_color = auto
     sort = yes
     idle_threshold = 0
-    font = Roboto 10
+    font = Sans 10
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -37,7 +37,6 @@
     icon_position = left
     min_icon_size = 0
     max_icon_size = 72
-    icon_path = /usr/share/icons/Qogir/16/status:/usr/share/icons/Qogir/16/devices/:/usr/share/icons/Qogir/16/apps/:/usr/share/pixmaps/
     sticky_history = false
     history_length = 0
     dmenu = /usr/bin/dmenu -p dunst:
@@ -56,21 +55,17 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#021b21"
+    background = "#010101"
     foreground = "#f8f8f6"
     timeout = 5
 
 [urgency_normal]
-    background = "#021b21"
+    background = "#010101"
     foreground = "#f8f8f6"
     timeout = 5
 
 [urgency_critical]
-    background = "#021b21"
+    background = "#010101"
     foreground = "#f8f8f6"
     frame_color = "#ff5555"
     timeout = 120
-
-[stack-volumes]
-    appname = "some_volume_notifiers"
-    set_stack_tag = "volume"
