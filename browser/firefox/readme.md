@@ -7,6 +7,7 @@
 
 # Extensions
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) - Content blocker
+- [Vimium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)
 - [Search by Image](https://addons.mozilla.org/en-US/firefox/addon/search_by_image/) - As its name
 - [Web Archives](https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/) - View archived or cached versions of web pages
 - [Translate Web Pages](https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/)
