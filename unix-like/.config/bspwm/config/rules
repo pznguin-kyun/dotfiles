@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# rules
-
-bspc rule -a Galculator state=floating
-bspc rule -a Gpick state=floating
-bspc rule -a Emacs state=tiled
